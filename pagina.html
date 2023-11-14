@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário com consulta a API de CEPs</title>
+    <script src="script.js" defer></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://d89jynn41mp3o.cloudfront.net/blog/wp-content/uploads/2017/07/18102313/como-fazer-rastreamento.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            
+            
+        }
+
+        .inputClass {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-weight: bold;
+
+        }
+
+        div {
+            width: 30%;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title {
+            margin-bottom: 100px;
+        }
+
+        button {
+            margin-top: 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: beige;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: gray;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Consultar Endereço Por CEP</h1>
+        <hr>
+
+        <form action="#">
+            <label>CEP:</label>
+            <input placeholder="Digite seu CEP" id="cep" class="inputClass"/><br>
+
+            <label>Rua:</label>
+            <input placeholder="Digite o nome da sua rua" id="logradouro" class="inputClass" /><br>
+
+            <label>Bairro:</label>
+            <input placeholder="Digite o seu bairro" id="bairro" class="inputClass" /><br>
+
+            <label>Cidade:</label>
+            <input placeholder="Digite a sua cidade" id="localidade" class="inputClass" /><br>
+
+            <label>Estado:</label>
+            <input placeholder="Digite o seu estado" id="uf" class="inputClass" /><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="cep.js"></script>
+    </div>
+
+</html>
